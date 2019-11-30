@@ -36,7 +36,6 @@ struct ContentView: View {
                     .labelsHidden()
                         .datePickerStyle(WheelDatePickerStyle())
                 }
-
                 Section{
                     Text("Desired amount of sleep:")
                         .font(.headline)
@@ -60,26 +59,25 @@ struct ContentView: View {
                     .labelsHidden()
                     .pickerStyle(DefaultPickerStyle())
                 }
-                
+                    
                 Section(header: Text("Your bedtime:")) {
                     
                     Text("\(alertMessage)")
 
-                    }
                 }
             }
             .navigationBarTitle("BetterRest")
 //            .navigationBarItems(trailing:
 //                Button(action: calculateBedTime) {
 //                    Text("Calculate")
-//                }
-//            )
+//                })
+//            .alert(isPresented: $showingAlert) {
+//                Alert(title: Text("\(alertTitle)"), message: Text("\(alertMessage)"), dismissButton: .default(Text("OK")))
         }
-//        .alert(isPresented: $showingAlert) {
-//            Alert(title: Text("\(alertTitle)"), message: Text("\(alertMessage)"), dismissButton: .default(Text("OK")))
+
     }
 
-    
+
     func calculateBedTime() {
 
         let model = SleepCalculator()
@@ -108,8 +106,10 @@ struct ContentView: View {
 
     }
 
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+    
