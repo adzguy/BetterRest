@@ -1,0 +1,7 @@
+- name: Firebase, AWS
+  percentage: 80
+  color: info
+
+- name: XCTesting/Unit Testing
+  percentage: 80
+  color: success

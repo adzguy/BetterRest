@@ -1,0 +1,19 @@
+- name: Java
+  percentage: 90
+  color: danger
+
+- name: Swift
+  percentage: 90
+  color:
+
+- name: Python
+  percentage: 90
+  color: dark
+  
+- name: PHP/MySQL
+  percentage: 70
+  color: success
+
+- name: JavaScript
+  percentage: 50
+  color: warning
